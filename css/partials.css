@@ -1,0 +1,341 @@
+  *{
+    -webkit-tap-highlight-color: transparent;
+  }
+  .loader-holder{
+    z-index: 1001;
+    position: fixed;
+    top: 0;
+    display: flex;
+    align-items: center;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: #180000;
+    background-image: linear-gradient(160deg, #180000 0%, #55007b 100%);
+
+
+  }
+    .loader {
+    /* border: 10px solid ##000000;  */
+    border-top: 10px solid #000000; /* Blue */
+    border-bottom: 10px solid darkorchid;
+    border-radius: 50%;
+    position: relative;
+    width: 120px;
+    height: 120px;
+    animation: spin 1.5s linear infinite;
+    margin: auto; 
+          }
+      @keyframes spin {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+      }
+  .sidebar{
+      /* display: none; */
+      /* margin-top: 44px; */
+      transform: translateX(-120%);
+
+      background-color: #e4e4e4e7;
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 30%;
+      z-index: 101;
+      transition: transform 0.5s ease-in;
+  }
+  .sidebar-active{
+    transform: translateX(0%);
+  }
+  .sbmenu{
+      padding: 0.5em 0 0 0;
+      margin-left: 80%;
+      cursor: pointer;
+  }
+   /* Nav bar */
+   div .sbnav{
+    width: 100%;
+    height: 100%;
+    box-shadow:         0px 1px 1px -1px rgba(0, 0, 0, 0.5) inset;
+    -webkit-box-shadow: 0px 1px 12px -1px rgba(0, 0, 0, 0.5) inset;
+    -moz-box-shadow:    0px 1px 1px -1px rgba(0,0,0,0.5) inset;
+  }
+  
+  div .sbnav ul{
+    float: none;
+    padding: 2px 0;
+  }
+  /* nav bar lists */
+  div .sbnav ul li {
+    list-style: none;
+    position: relative;
+    text-align: center;
+    background-color:transparent;
+    margin: 0.5em 0;
+  }
+  div .sbnav ul li .spts{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0 0.5em;
+}
+  /* nav bar links "EXPLORE" */
+  div .sbnav ul li a{
+    display: block;
+    font-family: arial;
+    color:#000000;
+    font-size: 14px;
+    padding: 1em 1.5em;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  /* nav bar unordered sub-lists */
+  div .sbnav ul li ul{
+    display: block;
+    text-align: center;
+    border-radius: 0px 0px 8px 8px;
+    z-index: 1000;
+  }
+  /* navbar sub-lists */
+  div .sbnav ul li ul li{
+    width: 100%;
+    border-radius: 8px;
+  }
+  /* nav bar sub-list links i.e, HOME,GROUP etc */
+  div .sbnav ul li ul li a{
+    padding: 14px 10px;
+    transition: all ease 0.2s;
+    color:#5c5c5c;
+    text-decoration: none;
+  }
+  /* hover effect on nav bar sub-list links */
+  div .sbnav ul li ul li a:hover{
+    background-color: #ffffff6e;
+    color:#000000;
+  }
+
+
+   /* Nav bar */
+   .menu{
+    margin: 0.4em;
+    margin-left: 2.5em;
+    max-height: 50px;
+    float: left;
+    cursor: pointer;
+
+  }
+   .main-nav{
+    width: 100%;
+    height: 50px;
+    background-color: rgb(255, 255, 255);
+    
+
+    position: fixed;
+    top: 0;
+    box-shadow: 0px 25px 25px -19px rgba(227,225,225,0.59);
+    -webkit-box-shadow: 0px 25px 25px -19px rgba(227,225,225,0.59);
+    -moz-box-shadow: 0px 25px 25px -19px rgba(227,225,225,0.59);
+    z-index: 100;
+  }
+  
+  .main-nav ul{
+    float: left;
+  }
+  /* nav bar lists */
+  .main-nav ul li{
+    float: left;
+    list-style: none;
+    position: relative;
+    
+  }
+  .explore-tab{
+    height: 2.1em;
+    /* background-color: #000000; */
+  }
+  /* nav bar links "EXPLORE" */
+  .main-nav ul li a{
+    display: block;
+    font-family: arial;
+    color: #222;
+    font-size: 14px;
+    padding: 1px 10px;
+    text-decoration: none;
+  }
+  .explore-tab a{
+    display: block;
+    font-family: arial;
+    color: #222;
+    font-size: 14px;
+    padding: 1px 10px;
+    text-decoration: none;
+  }
+ .explore-tab::after{
+    content: "";
+    position: absolute;
+    left: 2px;
+    bottom: 0;
+    height: 3px;
+    background-color: #000000;
+    width: 0%;
+    transition: ease all 0.5s;
+  }
+  .explore-tab:hover:after{
+    width: 93%;
+  }
+  /* nav bar unordered sub-lists */
+  .main-nav ul li ul{
+    display: none;
+    position: absolute;
+    background-color: white;
+    margin-top: 0em;
+    padding: 0;
+    padding-top: 16px;
+    /* border-radius: 0px 0px 8px 8px; */
+    text-align: center;
+  }
+  /* hover list of nav bar main list i.e, "EXPLORE" */
+  .main-nav ul li:hover ul{
+    display: block;
+  }
+  /* navbar sub-lists */
+  .main-nav ul li ul li{
+    width: 130px;
+    border-radius: 8px;
+    
+  }
+  /* nav bar sub-list links i.e, HOME,GROUP etc */
+  .main-nav ul li ul li a{
+    padding: 14px 10px;
+  }
+  /* hover effect on nav bar sub-list links */
+  .main-nav ul li ul li a:hover{
+    padding: 14px 10px;
+    background-color: #e4e4e4;
+  }
+
+  .logo-holder{
+  display: flex;
+  justify-content:center;
+  position: fixed;
+  top: 0;
+  left: 48%;
+  }
+  img.logo {
+    height: 50px;
+    width: 50px;
+    object-fit:cover;
+  }
+
+  img.YTlogo{
+    padding-left: 20px;
+  }
+  img.IGlogo{
+      padding-left: 10PX;
+  }
+  img.TWTTRlogo{
+      padding-left: 35PX;
+  }
+  img.Fcbklogo{
+    padding-left: 10PX;
+}
+
+.bgpic-holder{
+  margin-top: 50px;
+  max-height: 45vh;
+  width: 100%;
+}
+img.bgpic {
+  max-height: inherit;
+   object-fit: cover;
+    width: 100%;
+  }
+
+.footer{
+  background-color: #000000;
+  position: relative;
+  bottom: 0;
+}
+.ftr-space{
+  text-align: center;
+  width: 100%;
+  place-content: center;
+  padding: 1em 0;
+  background-color: #000000;
+}
+.ftr{
+  display: grid;
+  place-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.cr{
+  bottom: 0;
+  color: rgba(199, 199, 199, 0.868);
+}
+.cr a{
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+.cr a:hover{
+  color: #c23dff;
+}
+a.endtoken{
+  z-index: 1000;
+  position: fixed;
+  bottom: 3em;
+  right: 4em;
+}
+.m-endtoken{
+  z-index: 1000;
+  position:fixed;
+  visibility: hidden;
+  bottom: 6%;
+  right: 12%;
+  transition:all ease 0.1s;
+}
+section.page-end{
+  margin-bottom: 0.5em;
+}
+section.page-end::after{
+  content: '';
+  clear: both;
+  display: table;
+  }
+  /* --------------------------media-------------------- */
+  @media (max-width:780px){
+
+    .sidebar{
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 60%;
+    }
+    .main-nav ul{
+      display: none;
+    }
+    .menu{
+      padding: 0.3% 0 0 0;
+    }
+    .main-nav ul li a{
+      visibility: hidden;
+    }
+    div .sbnav ul li ul li a{
+      color:#424242;
+    }
+    .logo-holder{
+      left: 45%;
+      }
+    .cr{
+      font-size: 10px;
+    }
+    a.endtoken{
+      visibility: hidden;
+   }
+   .m-endtoken{
+     position:fixed;
+     visibility: visible;
+     bottom: 4%;
+     right: 6%;
+   }
+  }

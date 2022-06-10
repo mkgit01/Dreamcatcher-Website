@@ -1,0 +1,90 @@
+body{
+    padding: 0;
+    margin: 0;
+    background-color: black;
+    overflow-x: hidden;
+  }
+  
+.banner {
+    max-height: 45vh;
+    margin-top: 50px;
+    object-fit: cover;
+      width: 100%;
+    }
+    .section-title{
+        text-align: center;
+        transition: all ease 0.5s;
+        color: rgba(240, 248, 255, 0.835);
+        padding: 1em 0;
+
+    }
+    .title-hover{
+        position: sticky;
+        top: 50px;
+        background-color: #000000ef;
+        z-index: 99;
+    }
+    .albums-mvs{
+        display: flex;
+        justify-content: space-evenly;
+        background-color: #091414;
+background-image: linear-gradient(160deg, #091414 0%, #0061aa 100%);
+
+    }
+    .albums-mvs2{
+        display: flex;
+        justify-content: space-evenly;
+        background-color: #0079c3;
+        background-image: linear-gradient(160deg, #0061aa 0%, #123131 100%);
+
+    }
+    .albums-mvs3{
+        display: flex;
+        justify-content: space-evenly;
+        background-color: #091414;
+background-image: linear-gradient(160deg, #091414 0%, #0061aa 100%);
+
+    }
+    .embed-title{
+        text-align: center;
+        color: rgba(240, 248, 255, 0.609);
+        width: 100%;
+    }
+    .embed-title-main{
+        text-align: center;
+        color: rgba(240, 248, 255, 0.609);
+        width: 100%;
+    }
+    .res-album{
+        display: none;
+        margin-bottom: 1em;
+    }
+    .res-album-txt{
+        display: none;
+        text-align: center;
+        color: rgba(240, 248, 255, 0.609);
+        width: 100%;
+    }
+    .iframe-wrapper iframe{
+        width: 100%;
+        aspect-ratio: 16/9;
+        z-index: 98;
+    }
+    .music-section{
+        padding: 0em 1em;
+      }
+    @media(max-width:945px){
+        .res-album{
+            display: block;
+        }
+        .res-album-txt{
+            display: block;
+        }
+        .album-release{
+            display: none;
+        }
+        .section-title {
+            padding: 0.1em 0;
+        }
+
+    }

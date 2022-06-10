@@ -1,0 +1,114 @@
+body{
+  padding: 0;
+  margin: 0;
+  background-color: black;
+  opacity: 1;
+  background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, #141414 13px ), repeating-linear-gradient( #00000055, #000000 );
+  overflow-x: hidden;
+}
+
+.p-bgpic-holder{
+  display: flex;
+  justify-content: center;
+}
+.p-midbgpic{
+  height: 200px;
+  width: 200px;
+}
+.p-bgpic{
+  width: 50%;
+}
+  .p-holder p {
+    padding: 0 2em;
+    color: antiquewhite;
+    font-family: "Courier New", Courier, monospace;
+    /* background-color: antiquewhite; */
+  }
+  .historydc-1{
+    color: antiquewhite;
+    text-align: center;
+    padding: 0 4em;
+  }
+  .historydc{
+    color: antiquewhite;
+    text-align:start center;
+    padding: 0 2em;
+    
+  }
+  .wrapper-histry{
+    display: grid;
+    grid-template-columns:repeat(2,1fr) ;
+    grid-template-rows: 1;
+  }
+  .wrapper-histry-md{
+    display: none;
+        }
+ .title {
+   font-size: 20px;
+    padding-left: 1%;
+    text-align: center;
+    background-color: rgba(201, 201, 201, 0.541);
+    color: rgb(0, 0, 0);
+  }
+
+  h3.contents{
+    text-align: center;
+    color: rgba(153, 50, 204, 0.657);
+    background-color: rgb(53, 50, 50);
+  }
+  .heading {
+
+    text-align: center;
+    color: rgba(153, 50, 204, 0.657);
+    background-color: rgb(53, 50, 50);
+  }
+  .topics{
+    margin: 0;
+    padding: 0.5em 0;
+    text-align: center;
+    color: rgba(153, 50, 204, 0.657);
+    background-color:rgb(53, 50, 50) ;
+  }
+  .embed-holder{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  .iframe-wrapper{
+    position: relative;
+    width: 50%;
+    aspect-ratio: 16/9;
+    background-color: transparent;
+}
+.iframe-wrapper iframe{
+    z-index: 98;
+    position: absolute;
+    top:0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+}
+
+  @media(max-width:780px){
+    h1.heading{
+      font-size: 35px;
+    }
+  .topics{
+      padding: 0.2em 0;
+      font-size: 20px;
+    }
+    .wrapper-histry{
+      display: none;
+    }
+    .wrapper-histry-md{
+display: block;
+    }
+    .iframe-wrapper{
+      width: 70%;
+      }
+      .p-bgpic{
+        width: 70%;
+      }
+  }
