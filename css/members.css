@@ -35,13 +35,14 @@ hr{
 }
 .name-contnr{
   width: 100%;
-  display: flex;
+  display: grid;
   justify-content: center;
+  place-items: center;
 }
 img.name{
-  height: 20%;
-  width: 40%;
-  /* padding-left: 30%; */
+  height: 100%;
+  width: 98%;
+  max-width: 500px;
   object-fit:cover;
 }
 .member-wrapper{

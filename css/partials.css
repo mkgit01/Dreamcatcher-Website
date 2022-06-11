@@ -218,7 +218,8 @@
   justify-content:center;
   position: fixed;
   top: 0;
-  left: 48%;
+  left: 50%;
+  transform: translateX(-50%);
   }
   img.logo {
     height: 50px;
@@ -323,9 +324,6 @@ section.page-end::after{
     div .sbnav ul li ul li a{
       color:#424242;
     }
-    .logo-holder{
-      left: 45%;
-      }
     .cr{
       font-size: 10px;
     }
